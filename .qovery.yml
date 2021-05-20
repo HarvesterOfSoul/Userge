@@ -1,0 +1,15 @@
+---
+application:
+  name: "userge"
+  project: "sage-emperor"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "userge"
+  version: "4.4"
+routers:
+- name: "main-userge"
+  routes:
+  - application_name: "userge"
+    paths:
+    - "/*"
